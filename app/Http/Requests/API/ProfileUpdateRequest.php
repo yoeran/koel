@@ -17,7 +17,7 @@ class ProfileUpdateRequest extends Request
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . auth()->user()->id,
             'current_password' => 'required',
-            'new_password' => ['sometimes', Password::defaults()],
+            'new_password' => ['sometimes', Password::min(8)],
         ];
     }
 }
