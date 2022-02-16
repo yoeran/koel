@@ -27,7 +27,7 @@ class UserUpdateRequest extends Request
         return [
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => ['sometimes', Password::defaults()],
+            'password' => ['sometimes', Password::min(8)],
         ];
     }
 }

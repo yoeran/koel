@@ -23,7 +23,7 @@ class UserStoreRequest extends Request
         return [
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => ['required', Password::defaults()],
+            'password' => ['required', Password::min(8)],
             'is_admin' => 'required',
         ];
     }
