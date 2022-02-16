@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Koel</title>
+    <title>The Vault | Karvel</title>
 
     <meta name="description" content="{{ config('app.tagline') }}">
     <meta charset="utf-8">
@@ -20,6 +21,7 @@
 
     <link rel="stylesheet" href="{{ asset_rev('/css/app.css') }}">
 </head>
+
 <body>
     <div id="app"></div>
 
@@ -27,4 +29,5 @@
     @include('client-js-vars')
     <script src="{{ asset_rev('/js/app.js') }}"></script>
 </body>
+
 </html>

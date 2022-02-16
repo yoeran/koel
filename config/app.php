@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'tagline' => 'Personal audio streaming service that works.',
+    'tagline' => 'Karvel\'s Vault - Exclusive Access via Patreon.com/Karvel',
 
     'env' => env('APP_ENV', 'production'),
     'name' => 'Koel',
