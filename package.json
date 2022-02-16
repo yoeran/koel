@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/koel/koel"
+    "url": "https://github.com/yoeran/koel"
   },
   "devDependencies": {
     "@testing-library/cypress": "^7.0.6",

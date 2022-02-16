@@ -25,4 +25,4 @@ git -c color.ui=always tag "$TAG"
 git -c color.ui=always tag latest -f
 git -c color.ui=always push --tags -f
 
-echo "${TAG} tagged. Now go to https://github.com/koel/koel/releases and finish the draft release."
+echo "${TAG} tagged. Now go to https://github.com/yoeran/koel/releases and finish the draft release."

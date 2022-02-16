@@ -29,7 +29,7 @@ class ApplicationInformationService
     {
         return $this->cache->remember(self::CACHE_KEY, now()->addDay(), function (): string {
             try {
-                return json_decode($this->client->get('https://api.github.com/repos/koel/koel/tags')->getBody())[0]
+                return json_decode($this->client->get('https://api.github.com/repos/yoeran/koel/tags')->getBody())[0]
                     ->name;
             } catch (Throwable $e) {
                 $this->logger->error($e);
